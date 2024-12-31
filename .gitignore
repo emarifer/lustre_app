@@ -3,4 +3,7 @@
 /build
 erl_crash.dump
 
+priv/static/*.css
+priv/static/*.mjs
+
 node_modules

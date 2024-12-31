@@ -66,8 +66,18 @@ pub fn view(model: Model) -> element.Element(Msg) {
   }
 
   html.div([attribute.class("w-full mx-auto flex flex-col gap-12")], [
-    html.h1([attribute.class("text-center text-2xl mb-4 font-bold")], [
-      element.text("Funny Cats"),
+    html.div([attribute.class("flex gap-4 mx-auto items-center mt-8")], [
+      html.img([
+        attribute.src("priv/static/img/left-cat.png"),
+        attribute.class("w-12"),
+      ]),
+      html.h1([attribute.class("text-center text-2xl mb-4 mt-2 font-bold")], [
+        element.text("Funny Cats"),
+      ]),
+      html.img([
+        attribute.src("priv/static/img/right-cat.png"),
+        attribute.class("w-12"),
+      ]),
     ]),
     html.div(
       [attribute.class("w-full mx-auto flex justify-center items-center gap-8")],

@@ -42,8 +42,8 @@ jobs:
         run: sed -i "s|/priv/static/lustre_app.mjs|/${REPO_NAME}/priv/static/lustre_app.min.mjs|" dist/index.html
       - name: Update path css file in index.html
         run: sed -i "s|/priv/static/lustre_app.css|/${REPO_NAME}/priv/static/lustre_app.css|" dist/index.html
-      - name: Update path icon file in index.html
-        run: sed -i "s|/priv/static/lucy.svg|/${REPO_NAME}/priv/static/lucy.svg|" dist/index.html
+      - name: Updates the paths for all application files in /priv/static/img
+        run: grep -rlZ "/priv/static/img" ./dist | xargs -0 sed -i "s|/priv/static/img|/${REPO_NAME}/priv/static/img|"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
