@@ -105,7 +105,7 @@ pub fn view(model: Model) -> element.Element(Msg) {
       html.div(
         [
           attribute.class(
-            "w-full max-h-[60svh] overflow-y-scroll mx-auto flex flex-wrap gap-4",
+            "w-full max-h-[60svh] overflow-y-scroll mx-auto flex flex-wrap gap-4 scroller",
           ),
         ],
         _,
