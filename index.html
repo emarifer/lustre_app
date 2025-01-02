@@ -20,14 +20,14 @@
     rel="stylesheet">
   <style>
     .scroller {
+      scrollbar-gutter: stable;
       scrollbar-color: transparent transparent;
-      scrollbar-width: none;
-      transition: all 2s ease-in-out;
+      scrollbar-width: thin;
+      transition: scrollbar-color 2s ease-in-out;
     }
 
     .scroller:hover {
-      scrollbar-color: #7480ff #1d232a;
-      scrollbar-width: thin;
+      scrollbar-color: #7480ff transparent;
     }
   </style>
 </head>
